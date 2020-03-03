@@ -40,7 +40,7 @@ class Register extends Component {
                     <Col componentClass={ControlLabel} sm={2}>
                         Name
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={9}>
                         <FormControl onChange={this.updateDetails} value={this.state.details.name} type="text" placeholder="Name" />
                     </Col>
                 </FormGroup>
@@ -49,7 +49,7 @@ class Register extends Component {
                     <Col componentClass={ControlLabel} sm={2}>
                         Email
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={9}>
                         <FormControl onChange={this.updateDetails} value={this.state.details.username} type="text" placeholder="Username" />
                     </Col>
                 </FormGroup>
@@ -58,13 +58,13 @@ class Register extends Component {
                     <Col componentClass={ControlLabel} sm={2}>
                         Password
                     </Col>
-                    <Col sm={10}>
+                    <Col sm={9}>
                         <FormControl onChange={this.updateDetails} value={this.state.details.password} type="password" placeholder="Password" />
                     </Col>
                 </FormGroup>
 
                 <FormGroup>
-                    <Col smOffset={2} sm={10}>
+                    <Col smOffset={2} sm={9}>
                         <Button onClick={this.register}>Register</Button>
                     </Col>
                 </FormGroup>
