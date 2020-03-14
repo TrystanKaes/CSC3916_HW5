@@ -37,10 +37,10 @@ class Login extends Component {
             <Form horizontal>
                 <FormGroup controlId="username">
                     <Col componentClass={ControlLabel} sm={2}>
-                        Email
+                        username
                     </Col>
                     <Col sm={9}>
-                        <FormControl onChange={this.updateDetails} value={this.state.details.username} type="email" placeholder="Email" />
+                        <FormControl onChange={this.updateDetails} value={this.state.details.username} type="username" placeholder="username" />
                     </Col>
                 </FormGroup>
 
