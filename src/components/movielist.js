@@ -36,8 +36,8 @@ class MovieList extends Component {
 
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    console.log(typeof movieList)
-                    console.log(movieList)
+                    {console.log(typeof movieList)}
+                    {console.log(movieList)}
                     {/*movieList.map((movie) =>*/}
                     {/*    <Carousel.Item key={movie._id}>*/}
                     {/*        <div>*/}
