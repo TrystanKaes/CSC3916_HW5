@@ -33,11 +33,11 @@ class MovieList extends Component {
             if (!movieList) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }
-
+            console.log(typeof movieList)
+            console.log(movieList)
             return (
+
                 <Carousel onSelect={this.handleSelect}>
-                    {console.log(typeof movieList)}
-                    {console.log(movieList)}
                     {/*movieList.map((movie) =>*/}
                     {/*    <Carousel.Item key={movie._id}>*/}
                     {/*        <div>*/}
