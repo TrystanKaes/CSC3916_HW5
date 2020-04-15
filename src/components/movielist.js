@@ -36,19 +36,19 @@ class MovieList extends Component {
 
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    {movieList.map((movie) =>
-                        <Carousel.Item key={movie._id}>
-                            <div>
-                                <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>
-                                    <Image className="image" src={movie.image} thumbnail />
-                                </LinkContainer>
-                            </div>
-                            <Carousel.Caption>
-                                <h3>{movie.title}</h3>
-                                {/*<Glyphicon glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.yearReleased}*/}
-                                <Glyphicon glyph={'star'} /> {3} &nbsp;&nbsp; {movie.yearReleased}
-                            </Carousel.Caption>
-                        </Carousel.Item>)}
+                    {/*{movieList.map((movie) =>*/}
+                    {/*    <Carousel.Item key={movie._id}>*/}
+                    {/*        <div>*/}
+                    {/*            <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>*/}
+                    {/*                <Image className="image" src={movie.image} thumbnail />*/}
+                    {/*            </LinkContainer>*/}
+                    {/*        </div>*/}
+                    {/*        <Carousel.Caption>*/}
+                    {/*            <h3>{movie.title}</h3>*/}
+                    {/*            /!*<Glyphicon glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.yearReleased}*!/*/}
+                    {/*            <Glyphicon glyph={'star'} /> {3} &nbsp;&nbsp; {movie.yearReleased}*/}
+                    {/*        </Carousel.Caption>*/}
+                    {/*    </Carousel.Item>)}*/}
                 </Carousel>)
         }
 
