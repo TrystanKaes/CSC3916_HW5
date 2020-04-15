@@ -36,8 +36,8 @@ class MovieList extends Component {
 
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    {/*{movieList.map((movie) =>*/}
-                    {/*    <Carousel.Item key={movie._id}>*/}
+                    {movieList.map((movie) =>
+                        <Carousel.Item key={movie._id}>
                     {/*        <div>*/}
                     {/*            <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>*/}
                     {/*                <Image className="image" src={movie.image} thumbnail />*/}
@@ -48,7 +48,7 @@ class MovieList extends Component {
                     {/*            /!*<Glyphicon glyph={'star'} /> {movie.avgRating} &nbsp;&nbsp; {movie.yearReleased}*!/*/}
                     {/*            <Glyphicon glyph={'star'} /> {3} &nbsp;&nbsp; {movie.yearReleased}*/}
                     {/*        </Carousel.Caption>*/}
-                    {/*    </Carousel.Item>)}*/}
+                        </Carousel.Item>)}
                 </Carousel>)
         }
 
