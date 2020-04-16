@@ -20,7 +20,8 @@ class Movie extends Component {
         const ActorInfo = ({actors}) => {
             return actors.map((actor, i) =>
                 <p key={i}>
-                    <b>{actor.actorName}</b> {actor.characterName}
+                    {/*<b>{actor.actorName}</b> {actor.characterName}*/}
+                    <b>{actor}</b>
                 </p>
             )
         }
@@ -28,7 +29,7 @@ class Movie extends Component {
         const ReviewInfo = ({reviews}) => {
             return reviews.map((review, i) =>
                 <p key={i}>
-                    <b>{review.username}</b> {review.review}
+                    <b>{review.username}</b> {review.quote}
                     <Glyphicon glyph={'star'} /> {review.rating}
                 </p>
             )
@@ -41,7 +42,7 @@ class Movie extends Component {
             return (
               <Panel>
                   <Panel.Heading>Movie Detail</Panel.Heading>
-                  <Panel.Body><Image className="image" src={currentMovie.imageUrl} thumbnail /></Panel.Body>
+                  <Panel.Body><Image className="image" src={currentMovie.image} thumbnail /></Panel.Body>
                   <ListGroup>
                       <ListGroupItem>{currentMovie.title}</ListGroupItem>
                       <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
