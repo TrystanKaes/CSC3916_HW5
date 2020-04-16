@@ -35,7 +35,7 @@ class MovieList extends Component {
             }
             return (
                 <Carousel onSelect={this.handleSelect}>
-                    movieList.map((movie) =>
+                    {movieList.map((movie) =>
                         <Carousel.Item key={movie._id}>
                             <div>
                                 <LinkContainer to={'/movie/'+movie._id} onClick={()=>this.handleClick(movie)}>
