@@ -16,6 +16,8 @@ class MovieList extends Component {
     componentDidMount() {
         const {dispatch} = this.props;
         dispatch(fetchMovies());
+        console.log(typeof this.props.movies)
+        console.log(this.props.movies)
     }
 
     handleSelect(selectedIndex, e) {
@@ -33,8 +35,6 @@ class MovieList extends Component {
             if (!movieList) { // evaluates to true if currentMovie is null
                 return <div>Loading...</div>;
             }
-            console.log(typeof movieList)
-            console.log(movieList)
             return (
 
                 <Carousel onSelect={this.handleSelect}>
