@@ -18,12 +18,13 @@ class Movie extends Component {
 
     render() {
         const ActorInfo = (actors) => {
+            console.log(typeof actors)
             return actors.map((actor, i) =>
                             <p key={i}>
                                 <b>{actor.actorName}</b> {actor.characterName}
                                 {/*<b>{actor}</b>*/}
                             </p>
-                        )
+                            )
         }
 
         const ReviewInfo = (reviews) => {
