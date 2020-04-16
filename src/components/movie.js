@@ -17,7 +17,7 @@ class Movie extends Component {
     }
 
     render() {
-        const ActorInfo = ({actors}) => {
+        const ActorInfo = (actors) => {
             return actors.map((actor, i) =>
                 <p key={i}>
                     <b>{actor.actorName}</b> {actor.characterName}
@@ -26,7 +26,7 @@ class Movie extends Component {
             )
         }
 
-        const ReviewInfo = ({reviews}) => {
+        const ReviewInfo = (reviews) => {
             return reviews.map((review, i) =>
                 <p key={i}>
                     <b>{review.username}</b> {review.quote}<b></b>
@@ -35,7 +35,7 @@ class Movie extends Component {
             )
         }
 
-        const DetailInfo = ({currentMovie}) => {
+        const DetailInfo = (currentMovie) => {
             if (!currentMovie) { //if not could still be fetching the movie
                 return <div>Loading...</div>;
             }
