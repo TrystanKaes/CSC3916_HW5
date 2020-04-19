@@ -97,6 +97,7 @@ export function postReview(data){
                     throw Error(response.statusText);
                 }
                 var helpMe = response.json();
+                alert(helpMe);
                 console.log(helpMe);
                 return helpMe;
             })
