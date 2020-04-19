@@ -1,5 +1,6 @@
 This project is hosted at:
 [Heroku](https://kaest-csc3916-hw5.herokuapp.com/)
+And works together with the API found at my other [Repository](https://github.com/TrystanKaes/CSC3916_HW4).
 
 
 
