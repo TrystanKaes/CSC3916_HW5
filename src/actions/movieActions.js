@@ -86,13 +86,19 @@ export function postReview(data){
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Authorization': localStorage.getItem('token')
             },
-            body: JSON.stringify(data),
+            body: {
+                movieId: data.movieId,
+                quote: data.quote,
+                rating: data.rating,
+            },
             mode: 'cors'})
             .then( (response) => {
                 if (!response.ok) {
                     throw Error(response.statusText);
                 }
-                return response.json();
+                var helpMe = response.json();
+                console.log(helpMe);
+                return helpMe;
             })
             .then( (res) => {
                 console.log(res.json());
