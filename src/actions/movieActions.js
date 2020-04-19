@@ -92,10 +92,7 @@ export function postReview(data){
                 if (!response.ok) {
                     throw Error(response.statusText);
                 }
-                var helpMe = response.json();
-                alert(helpMe);
-                console.log(helpMe);
-                return helpMe;
+                return response.json();
             })
             .then( (res) => {
                 console.log(res.json());

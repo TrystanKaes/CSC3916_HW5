@@ -48,6 +48,7 @@ class Movie extends Component {
             alert("You gotta actually review it!");
         }else{
             dispatch(postReview(this.state.review));
+            this.forceUpdate()
             this.setState({reviewed: true})
         }
     }
