@@ -47,7 +47,7 @@ class Movie extends Component {
         if(this.state.review.quote === '' || this.state.review.rating === 0){
             alert("You gotta actually review it!");
         }else{
-            postReview(this.state.review);
+            dispatch(postReview(this.state.review));
             this.setState({reviewed: true})
         }
     }

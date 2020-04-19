@@ -79,11 +79,10 @@ export function fetchMovie(movieId){
 export function postReview(data){
     const env = runtimeEnv();
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/reviews/`, {
+        return fetch(`${env.REACT_APP_API_URL}/reviews`, {
             method: 'POST',
             headers: {
-                'Accept': '*/*',
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/json',
                 'Authorization': localStorage.getItem('token')
             },
             body: {
