@@ -82,14 +82,11 @@ export function postReview(data){
         return fetch(`${env.REACT_APP_API_URL}/reviews`, {
             method: 'POST',
             headers: {
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 'Authorization': localStorage.getItem('token')
             },
-            body: {
-                movieId: data.movieId,
-                quote: data.quote,
-                rating: data.rating,
-            },
+            body: JSON.stringify(data),
             mode: 'cors'})
             .then( (response) => {
                 if (!response.ok) {
